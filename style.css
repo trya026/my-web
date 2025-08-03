@@ -1,0 +1,227 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+body {
+    font-family:"plus jakarta sans";
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+@media (max-width: 992px){
+    .container {
+        width: 90%;
+    }
+}
+/* navbar */
+.navbar {
+    padding: 25px 0px;
+}
+.navbar-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-box ul {
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+.navbar-box a{
+    color: black;
+}
+@media (max-width: 768px) {
+    .navbar-box .menu {
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(102, 51, 153, 0.5);
+        padding: 20px;
+        border-radius: 10px 10px 0px 0px;
+        backdrop-filter: blur(10px);
+    }
+    .navbar-box .menu a {
+        color: white;
+    }
+    .navbar-box {
+        justify-content: center;
+    }
+}
+@media (max-width: 475px) {
+    .navbar-box .menu {
+        gap: 17px;
+    }
+
+}
+    */
+/* navbar
+/* project */
+.tentang {
+    margin-bottom: 100px;
+}
+.project-box {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) ,url(gambar/proyek.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: white;
+    margin-bottom: 100px;
+}
+.project-box h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 7px;
+}
+.project-box p {
+    margin-bottom: 18px;
+}
+.project-box a {
+    color: white;
+    background-color: rgba(102, 51, 153, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: all .2s ease;
+}
+.project-box a:hover {
+    background-color: rgba(255, 99, 71, 0.8);
+}
+/* project */
+/* tentang */
+.tentang {
+    margin-bottom: 70px;
+}
+.tentang-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    align-items: center;
+}
+.img-box {
+    width: 100%;
+}
+.img-box img {
+    border-radius: 10px;
+    width: 100%;
+}
+.img-box img:hover {
+    filter: hue-rotate(90deg);
+}
+.teks-box h2 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+.teks-box p {
+    text-align: justify;
+    line-height: 1.3;
+}
+@media (max-width: 992px){
+    .tentang-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .teks-box p {
+        text-align: center;
+    }
+}
+/* tentang */
+/* daftar */
+.daftar {
+    width: 100%;
+    margin-bottom: 70px;
+}
+.container h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.daftar-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+}
+.daftar-box .box {
+    background-color: white;
+    box-shadow: 0px 0px 20px -10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.box img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.box h3 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+.box a {
+    color: white;
+    background-color: rgba(102, 51, 153, 0.8);
+    padding: 8px;
+    font-size: 17px;
+    border-radius: 10px;
+    transition: all .3s ease;
+    display: inline-block;
+    width: 100%;
+}
+.box a:hover {
+    background-color: rgba(255, 99, 71, 0.8);
+}
+
+@media(max-width:992px) {
+    .daftar-box {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .box-img {
+        width: 100%;
+    }
+}
+/* daftar */
+/* footer */
+.footer {
+    width: 100%;
+}
+.footer-items {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    font-size: 16px;
+    width: 100%;
+}
+.name-footer {
+    width: 100%;
+}
+.name-footer span {
+    font-weight: bold;
+}
+.font-awesome {
+    float: right;
+}
+.font-awesome .fab {
+    margin: 7px 7px;
+    font-size: 17px;
+}
+
+@media (max-width: 768px) {
+    .footer-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+/* footer */
